@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## v0.56 - 2026-03-09
+
+### Added
+- Add `tls/` directory with `.gitkeep` and `.gitignore` for per-host TLS certificates (#47)
+
 ## v0.55 - 2026-03-08
 
 No changes.
