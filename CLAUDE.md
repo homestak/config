@@ -167,7 +167,8 @@ packages:
 Non-sensitive defaults inherited by all entities:
 - `defaults.timezone` - System timezone (e.g., America/Denver)
 - `defaults.domain` - Network domain (optional, blank by default)
-- `defaults.ssh_user` - Default SSH user (typically root)
+- `defaults.host_user` - SSH user for PVE host access (typically root)
+- `defaults.vm_user` - User created on VMs via cloud-init (default: homestak)
 - `defaults.bridge` - Default network bridge
 - `defaults.gateway` - Default gateway for static IPs
 - `defaults.packages` - Base packages installed on all VMs
@@ -219,7 +220,7 @@ Primary key derived from filename (e.g., `srv1.yaml` → `srv1`).
 - `hardware.memory_gb` - Total RAM in GB
 
 **Access section:**
-- `access.ssh_user` - SSH username (default: root)
+- `access.host_user` - SSH username for host access (default: root)
 - `access.ssh_port` - SSH port (default: 22)
 - `access.authorized_keys` - References to secrets.ssh_keys by user@host identifier (FK)
 
